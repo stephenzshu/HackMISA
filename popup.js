@@ -15,8 +15,7 @@ function findMe() {
 	function success(position) {
 		let lat = position.coords.latitude;
 		let lon = position.coords.longitude;
-		document.getElementById('startLat').innerHTML = "Latitude: "+lat;
-  		document.getElementById('startLon').innerHTML = "Longitude: "+lon;
+		document.getElementById('lonlat').innerHTML = "Location: " + lon + "," + lat;
   		status.innerHTML = '';
 	}
 
