@@ -15,8 +15,8 @@ function findMe() {
 	function success(position) {
 		let lat = position.coords.latitude;
 		let lon = position.coords.longitude;
-		document.getElementById('startLat').innerHTML = lat;
-  		document.getElementById('startLon').innerHTML = lon;
+		document.getElementById('startLat').innerHTML = "Latitude: "+lat;
+  		document.getElementById('startLon').innerHTML = "Longitude: "+lon;
   		status.innerHTML = '';
 	}
 
@@ -25,11 +25,18 @@ function findMe() {
 	}
 	status.innerHTML = 'Locating...';
 	navigator.geolocation.getCurrentPosition(success, error);
+
+	//$.get('https://msc.fema.gov/portal/search#searchresultsanchor', (res) => {
+	//	status.innerHTML=res;
+	//});
 }
 
 function test() {
 	let status = document.getElementById('status');
-	status.innerHTML = 'works';
+
+	//$.get('https://msc.fema.gov/portal/search#searchresultsanchor', (res) => {
+	//	status.innerHTML=res;
+	//});
 }
 
 //button to get location of user
