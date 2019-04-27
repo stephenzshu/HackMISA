@@ -1,0 +1,14 @@
+{
+	"manifest_version": 2,
+	"name" : "Natural Diaster",
+	"description" : "up to date diasaster warning",
+	"version" : "1.0.0",
+	"icons" : {"128": "natural-disaster-128.png"},
+	"browser_action" : {
+		"default_icon" : "natural-disaster-19.png",
+		"default_popup" : "popup.html"
+	},
+		
+	"permissions": ["activeTab"]
+
+}
