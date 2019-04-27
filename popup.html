@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -74,10 +74,14 @@
       color: #2f5876;
     }
   </style>
-  <script src="popup.js"></script>
 </head>
 
 <body>
+  <button id="find-me">Show my location</button>
+  <p id="status"></p>
+  <p id="startLat"></p>
+  <p id="startLon"></p>
+
   <div class="modal-header">
     <h1 class="logo">
       <img class="logo-icon" src="images/natural-disaster-icon.png" class="logo-icon"> Natural Disaster
@@ -117,5 +121,9 @@
     </div> 
   </div>
 </body>
+
+<footer>
+    <script src="popup.js"></script>
+</footer>
 
 </html>
