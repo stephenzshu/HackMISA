@@ -8,5 +8,11 @@
 		"default_icon" : "natural-disaster-19.png",
 		"default_popup" : "popup.html"
 	},
+<<<<<<< HEAD
 	"permissions": ["activeTab", "geolocation"]
+=======
+		
+	"permissions": ["activeTab","geolocation"]
+
+>>>>>>> 45f38da71d222634dab8152b31ee6953fa7a9873
 }
