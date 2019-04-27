@@ -1,13 +1,3 @@
-/*window.onload = function() {  
-  let startPos;
-  let geoSuccess = function(position) {
-  	startPos = position;
-  	document.getElementById('startLat').innerHTML = startPos.coords.latitude;
-  	document.getElementById('startLon').innerHTML = startPos.coords.longitude;
-  };
-  navigator.geolocation.getCurrentPosition(geoSuccess);
-
-};*/
 //gets current location of user
 function findMe() {
 	let status = document.getElementById('status');
@@ -24,18 +14,11 @@ function findMe() {
 	}
 	status.innerHTML = 'Locating...';
 	navigator.geolocation.getCurrentPosition(success, error);
-
-	//$.get('https://msc.fema.gov/portal/search#searchresultsanchor', (res) => {
-	//	status.innerHTML=res;
-	//});
 }
 
+//ignore
 function test() {
 	let status = document.getElementById('status');
-
-	//$.get('https://msc.fema.gov/portal/search#searchresultsanchor', (res) => {
-	//	status.innerHTML=res;
-	//});
 }
 
 //button to get location of user
@@ -45,6 +28,7 @@ if (button) {
 } else
 	status = 'Error with button';
 
+//button linked to flood map
 let floodButton = document.getElementById('flood-map')
 if (floodButton) {
 	floodButton.addEventListener('click', test);
