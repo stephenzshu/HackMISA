@@ -12,7 +12,7 @@ function findMe() {
 
   		let url = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+
 			"&zoom=15&markers=color:red%7C"+lat+","+lon+
-			"&size=600x600&scale=1&key=AIzaSyBIeAh4Am3Dq5QwEdbJHXZGXL_B78kt-AI";
+			"&size=600x600&scale=1&key=";
 		document.getElementById('image').src = url;
 	}
 
