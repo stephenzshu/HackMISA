@@ -1,12 +1,19 @@
 //gets current location of user
 function findMe() {
 	let status = document.getElementById('status');
+	let lat;
+	let lon;
 
 	function success(position) {
-		let lat = position.coords.latitude;
-		let lon = position.coords.longitude;
+		lat = position.coords.latitude;
+		lon = position.coords.longitude;
 		document.getElementById('lonlat').innerHTML = "Location: " + lon + "," + lat;
   		status.innerHTML = '';
+
+  		let url = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+
+			"&zoom=15&markers=color:red%7C"+lat+","+lon+
+			"&size=600x600&scale=1&key=AIzaSyBIeAh4Am3Dq5QwEdbJHXZGXL_B78kt-AI";
+		document.getElementById('image').src = url;
 	}
 
 	function error() {

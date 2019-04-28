@@ -8,5 +8,11 @@
 		"default_icon" : "natural-disaster-19.png",
 		"default_popup" : "popup.html"
 	},
-	"permissions": ["activeTab", "geolocation", "tabs"]
+	"background" : {
+		"scripts" : ["background.js"],
+		"persistent" : false
+	},
+	"permissions": ["activeTab", "geolocation", "tabs", "storage",
+		"https://maps.googleapis.com/maps/api/*"
+	]
 }
